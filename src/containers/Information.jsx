@@ -1,6 +1,6 @@
 import React from 'react';
-
-import '../styles/components/Information.css'
+import { Link } from 'react-router-dom';
+import '../styles/components/Information.css';
 
 const Information = () => {
   return (
@@ -11,23 +11,21 @@ const Information = () => {
         </div>
         <div className="Information-form">
           <form action="">
-            <input type="text" placeholder="Nombre completo" name="name"/>
-            <input type="text" placeholder="Correo Electrónico" name="email"/>
-            <input type="text" placeholder="Dirección" name="qddress"/>
-            <input type="text" placeholder="apto" name="apto"/>
-            <input type="text" placeholder="Ciudad" name="city"/>
-            <input type="text" placeholder="Pais" name="country"/>
-            <input type="text" placeholder="Estado" name="state"/>
-            <input type="text" placeholder="Código Postal" name="cp"/>
-            <input type="text" placeholder="Tléfono" name="phone"/>
+            <input type="text" placeholder="Nombre completo" name="name" />
+            <input type="text" placeholder="Correo Electrónico" name="email" />
+            <input type="text" placeholder="Dirección" name="qddress" />
+            <input type="text" placeholder="apto" name="apto" />
+            <input type="text" placeholder="Ciudad" name="city" />
+            <input type="text" placeholder="Pais" name="country" />
+            <input type="text" placeholder="Estado" name="state" />
+            <input type="text" placeholder="Código Postal" name="cp" />
+            <input type="text" placeholder="Tléfono" name="phone" />
           </form>
         </div>
         <div className="Information-buttons">
-          <div className="information-back">
-            Regresar
-          </div>
+          <div className="information-back">Regresar</div>
           <div className="Information-next">
-            Pagar
+            <Link to="/checkout/payment">Pagar</Link>
           </div>
         </div>
       </div>
@@ -42,6 +40,6 @@ const Information = () => {
       </div>
     </div>
   );
-}
+};
 
 export default Information;
