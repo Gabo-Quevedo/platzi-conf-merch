@@ -1,4 +1,4 @@
 import React from 'react';
-const AppContext = React.contecxt({});
+const AppContext = React.createContext({});
 
 export default AppContext;
